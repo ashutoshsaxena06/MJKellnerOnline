@@ -33,16 +33,16 @@ public class TestMJ extends CommonMJ {
 	// }
 	public static int rowIndex;
 	public static String projectPath = System.getProperty("user.dir");
-	public static String inputFile = "C:\\Users\\Ashu\\Desktop\\ExportEngineInput.xlsx";
+	public static String inputFile = "C:\\Users\\Edge\\Desktop\\ExportEngineInput.xlsx";
 	// "C:\\Users\\my\\Downloads\\ExportEngineInput.xlsx";
 	// projectPath + "\\config\\ExportEngineInput.xlsx";
 	public static SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
-	public static String reportFile = "C:\\Users\\Ashu\\Desktop\\Reports\\USF_OG_report\\ExportSummary_USF_"
+	public static String reportFile = "C:\\Users\\Edge\\Desktop\\Reports\\USF_OG_report\\ExportSummary_USF_"
 			+ new Date().toString().replace(":", "").replace(" ", "") + ".xlsx";
 	// "C:\\Users\\my\\Downloads\\Reports\\USF_OG_report\\ExportSummary_USF_"+ new
 	// Date().toString().replace(":", "").replace(" ", "") + ".xlsx";
-	// for Ashu -
-	// "C:\Users\Ashu\Desktop\\Reports\\SyscoOG_report\\ExportSummary_Sysco_" +
+	// for Edge -
+	// "C:\Users\Edge\Desktop\\Reports\\SyscoOG_report\\ExportSummary_Sysco_" +
 	// PageAction.getDate().toString().replace(" ", "_");
 	// + new Date().toString().replace(":", "").replace(" ", "") + ".xlsx";
 	// projectPath+ "\\Output_Summary\\ExportSummary_Sysco_" + new
@@ -90,7 +90,7 @@ public class TestMJ extends CommonMJ {
 	public static void setUp() throws IOException {
 		// to get the browser on which the UI test has to be performed.
 		System.out.println("***********StartTest*********");
-//		RandomAction.deleteFiles("C:\\Users\\Ashu\\Downloads");
+		RandomAction.deleteFiles("C:\\Users\\Edge\\Downloads");
 		driver = RandomAction.openBrowser("Chrome", path);
 		System.out.println("Invoked browser .. ");
 	}
